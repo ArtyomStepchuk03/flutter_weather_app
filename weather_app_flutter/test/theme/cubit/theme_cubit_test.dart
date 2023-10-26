@@ -1,11 +1,11 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter_weather/packages/weather_repository/lib/src/models/weather.dart';
 import 'package:flutter_weather/theme/cubit/theme_cubit.dart';
-import 'package:flutter_weather/weather/weather.dart';
 import 'package:mocktail/mocktail.dart';
 
-import '../../helpers/hydrated_bloc.dart';
+import 'package:hydrated_bloc/hydrated_bloc.dart';
 
 // ignore: must_be_immutable
 class MockWeather extends Mock implements Weather {

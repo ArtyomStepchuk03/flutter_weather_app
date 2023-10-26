@@ -1,12 +1,13 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_weather/weather/weather.dart';
+import 'package:flutter_weather/weather/cubit/weather_cubit.dart';
+import 'package:flutter_weather/weather/models/weather.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:weather_repository/weather_repository.dart'
 as weather_repository;
 
-import '../../helpers/hydrated_bloc.dart';
+import 'package:hydrated_bloc/hydrated_bloc.dart';
 
 const weatherLocation = 'London';
 const weatherCondition = weather_repository.WeatherCondition.rainy;
